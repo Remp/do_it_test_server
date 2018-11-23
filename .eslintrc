@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "extends": ["prettier"],
+  "rules": {
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "prettier/prettier": [
+      1,
+      {
+        "singleQuote": true,
+        "semi": false,
+        "printWidth": 80,
+        "bracketSpacing": true
+      }
+    ],
+    "max-len": [
+      2,
+      {
+        "code": 80,
+        "ignoreUrls": true
+      }
+    ],
+    "prefer-const": 2,
+    "no-confusing-arrow": 0,
+    "no-duplicate-imports": 2,
+    "no-undef-init": "error",
+    "camelcase": "error",
+    "lines-between-class-members": ["warn", "always"],
+    "no-multiple-empty-lines": ["warn", { "max": 2, "maxEOF": 1 }],
+    "no-trailing-spaces": "warn",
+    "constructor-super": "error"
+  }
+}
